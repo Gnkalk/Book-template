@@ -1,0 +1,31 @@
+:root {
+    --primary-color:#ca8f21;
+    --secondary-color:#af7b19;
+}
+
+a[onclick] {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    a[onclick] {
+        display: none;
+    }
+    button {
+        position: fixed;
+        top: 25%;
+        height: 50vh;
+    }
+    button[prev] {
+        right: -1%;
+    }
+    button[next] {
+        left: -1%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        display: none;
+    }
+}
