@@ -8,7 +8,7 @@ a Simple and Esey Web Ui Template, Create with [GodUi](https://github.com/Godrat
 |---|---|
 |![Screenshot](./ScreenShots/3.png)|![Screenshot](./ScreenShots/4.png)|
 
-#### Dark 🌛
+#### Mobile 📱
 
 |![Screenshot](./ScreenShots/5.png)|![Screenshot](./ScreenShots/6.png)|
 |---|---|
