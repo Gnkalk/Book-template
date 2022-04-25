@@ -39,6 +39,8 @@ a Simple and Esey Web Ui Template, Create with [GodUi](https://github.com/Godrat
     ```
 5. Use `Page` and `article` tag
 
+**Tip**: You can also use the demo in this repository
+
 ### Contribute 🤝
 
 This project is offered under the MIT license and you can make any changes, modifications, etc. in it freely.
