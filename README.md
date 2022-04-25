@@ -22,18 +22,22 @@ a Simple and Esey Web Ui Template, Create with [GodUi](https://github.com/Godrat
     <!-- RTL  -->
     <link rel="stylesheet" href="https://unpkg.com/godratmand-ui@1.2.0/build/GodUi.rtl.min.css">
     ```
-2. import this js script
+2. import Other style
+    ```html
+    <link rel="stylesheet" href="https://book-template.pages.dev/src/Book.css">
+    ```
+3. import this js script
     ```html
     <script src="https://book-template.pages.dev/src/Book.js"></script>
     ```
-3. Config
+4. Config
     ```html
     <script>
     var bookName = "Book";
     var Lang = "fa" or "en";
     </script>
     ```
-4. Use `Page` and `article` tag
+5. Use `Page` and `article` tag
 
 ### Contribute 🤝
 
