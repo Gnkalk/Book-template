@@ -1,6 +1,6 @@
 :root {
-    --primary-color:#ca8f21;
-    --secondary-color:#af7b19;
+    --primary-color: #ca8f21;
+    --secondary-color: #af7b19;
 }
 
 a[onclick] {
@@ -11,14 +11,17 @@ a[onclick] {
     a[onclick] {
         display: none;
     }
+
     button {
         position: fixed;
         top: 25%;
         height: 50vh;
     }
+
     button[prev] {
         right: -1%;
     }
+
     button[next] {
         left: -1%;
     }
@@ -28,4 +31,99 @@ a[onclick] {
     button {
         display: none;
     }
+}
+
+body[theme=book] {
+    z-index: -2;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+body[theme=book]::before {
+    z-index: -1;
+    content: " ";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: var(--color);
+    border-radius: 20px;
+    width: 75vw;
+    height: 85vh;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+    body[theme=book] ::after {
+        z-index: 1;
+        content: " ";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: var(--color2);
+        border-radius: 1px;
+        width: 5px;
+        height: 85vh;
+        box-shadow: 0 0px 10px 1.5px rgba(0, 0, 0, 0.05);
+    }
+}
+
+body[theme=book] shaft {
+    z-index: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 74vw;
+    height: 84.2vh;
+    background-color: var(--bg-color2);
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+    body[theme=book] shaft {
+        display: flex;
+    }
+}
+
+body[theme=book] shaft page {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+body[theme=book] shaft page header {
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 5px;
+    order: 1;
+    position: absolute;
+    width: 100%;
+}
+
+body[theme=book] shaft page article {
+    order: 2;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    overflow-x: auto;
+}
+
+body[theme=book] shaft page footer {
+    border-top: 1px solid var(--bg-color);
+    padding-top: 5px;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    order: 3;
+}
+
+body[theme=book] shaft page footer a, body[theme=book] shaft page header a {
+    cursor: pointer;
 }

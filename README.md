@@ -18,19 +18,19 @@ a Simple and Esey Web Ui Template, Create with [GodUi](https://github.com/Godrat
 
 1. import GodUi in your Page
     ```html
-    <link rel="stylesheet" href="https://unpkg.com/godratmand-ui@1.2.0/build/GodUi.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/godratmand-ui@1.3.1/build/GodUi.min.css">
     <!-- RTL  -->
-    <link rel="stylesheet" href="https://unpkg.com/godratmand-ui@1.2.0/build/GodUi.rtl.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/godratmand-ui@1.3.1/build/GodUi.rtl.min.css">
     ```
-2. import Other style
+2. import Book style
     ```html
     <link rel="stylesheet" href="https://book-template.pages.dev/src/Book.css">
     ```
-3. import this js script
+3. import Book.js script
     ```html
     <script src="https://book-template.pages.dev/src/Book.js"></script>
     ```
-4. Config
+4. Config script
     ```html
     <script>
     var bookName = "Book";
